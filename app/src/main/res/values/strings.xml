@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SmsApplication</string>
+
+    <string-array name="address_number">
+        <item>+982000222</item>
+        <item>+981000700</item>
+        <item>+981000900</item>
+        <item>+9820000</item>
+        <item>+98200020</item>
+        <item>+98200021</item>
+        <item>+98200022</item>
+        <item>+98200033</item>
+        <item>+98200030</item>
+        <item>+98200038</item>
+        <item>+98200050</item>
+        <item>+98200060</item>
+        <item>+98200070</item>
+        <item>+982000911</item>
+        <item>+98300054</item>
+        <item>+98300066</item>
+        <item>+98100088</item>
+        <item>+98300014</item>
+        <item>+98300017</item>
+        <item>+9820004747</item>
+        <item>+9830009419</item>
+        <item>+9820000222</item>
+        <item>+986715000015</item>
+        <item>+989126304496</item>
+    </string-array>
+
+</resources>

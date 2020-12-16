@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="#fff"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:id="@+id/txt_bankName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:text="-------" />
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="بانک : " />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_deposit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:id="@+id/txt_deposit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:text="-------" />
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="واریز : " />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_harvest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:id="@+id/txt_harvest"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-------" />
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="برداشت : " />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:id="@+id/txt_remaining"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-------" />
+
+                                <gap.com.smsapplication.widget.BTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="مانده : " />
+                        </LinearLayout>
+
+
+                        <gap.com.smsapplication.widget.BTextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="date"/>
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/bank_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

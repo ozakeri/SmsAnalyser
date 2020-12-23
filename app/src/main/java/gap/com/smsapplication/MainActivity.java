@@ -15,12 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import gap.com.smsapplication.adapter.SmsListAdapter;
-import gap.com.smsapplication.constant.Constants;
-import gap.com.smsapplication.utils.Converter;
-import gap.com.smsapplication.utils.Util;
-
 public class MainActivity extends AppCompatActivity {
+
+    public static String TAG = "MainActivity.NAm";
     List<Sms> smsArrayList = new ArrayList<Sms>();
     private int REQUEST_CODE_ASK_PERMISSIONS = 333;
     private Sms sms;
@@ -37,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String[] addressList = getResources().getStringArray(R.array.address_number);
 
+
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -46,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             if (hasReadSmsPermission != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{Manifest.permission.READ_SMS}, REQUEST_CODE_ASK_PERMISSIONS);
             } else {
-                smsArrayList = getAllSms();
+              /*  smsArrayList = getAllSms();
                 for (int i = 0; i < smsArrayList.size(); i++) {
                     sms = smsArrayList.get(i);
                     for (String address : addressList) {
@@ -161,10 +159,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-                recyclerView.setAdapter(new SmsListAdapter(resultList, bankName));
+                recyclerView.setAdapter(new SmsListAdapter(resultList, bankName));*/
             }
         } else {
-            smsArrayList = getAllSms();
+            //smsArrayList = getAllSms();
             for (int i = 0; i < smsArrayList.size(); i++) {
                 sms = smsArrayList.get(i);
                 for (String address : addressList) {
